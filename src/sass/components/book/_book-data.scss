@@ -1,0 +1,52 @@
+.book-info {
+  height: 15rem;
+  margin: 7rem auto 0 auto;
+  max-width: 40rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+.book-cover {
+  height: 15rem;
+  background-color: lightgrey;
+}
+
+.book-cover img {
+  height: 100%;
+}
+
+.book-description {
+  font-family: $font-basic;
+  text-align: right;
+  min-width: 15rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.book-title {
+  color: rgba($color-green-dark, 0.8);
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.book-author {
+  color: $color-green-dark;
+  font-size: 1rem;
+}
+
+.book-property {
+  margin: 1rem 0;
+}
+
+.prop-icon {
+  color: $color-green-light;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.prop-icon:hover {
+  color: $color-red;
+}

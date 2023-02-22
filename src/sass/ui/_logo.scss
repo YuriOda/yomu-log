@@ -1,0 +1,21 @@
+.logo-div {
+  padding-top: 2rem;
+  text-align: center;
+  position: relative;
+  width: max-content;
+}
+
+.icon-logo {
+  color: $color-beige-light;
+  font-size: 4rem;
+  position: relative;
+  top: -3rem;
+}
+
+.logo {
+  font-family: $font-title;
+  font-size: 2rem;
+  margin: auto;
+  position: relative;
+  z-index: 10;
+}

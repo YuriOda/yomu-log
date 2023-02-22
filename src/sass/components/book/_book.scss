@@ -1,0 +1,40 @@
+#bookcover-section {
+  position: relative;
+}
+
+.book {
+  position: relative;
+  height: 12rem;
+  width: 4rem;
+  border: $border-basic;
+  border-radius: 5px;
+  margin: 0.5rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.book img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-textbox {
+  font-family: $font-basic;
+  font-size: 0.75rem;
+  background-color: rgba($color-beige-light, 0.9);
+  position: absolute;
+  bottom: 2rem;
+  opacity: 0;
+  z-index: 10;
+  width: 10rem;
+  border-radius: 1rem;
+
+  overflow: visible;
+
+  padding: 1rem;
+}
+
+#bookcover-section:hover .book-textbox {
+  opacity: 1;
+}

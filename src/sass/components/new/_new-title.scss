@@ -1,0 +1,80 @@
+$title-height: 6rem;
+
+.title-section {
+  padding-top: 6rem;
+  margin: 0 auto;
+}
+
+.title-form {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+.title-input {
+  @include input();
+
+  border-bottom: $border-basic;
+  height: $title-height;
+  width: calc(80vw - 4rem);
+  max-width: 40rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.25rem;
+
+  //for iOS
+  border-radius: 0;
+}
+
+.title-button {
+  @include button();
+  height: $title-height;
+  width: 4rem;
+  border-bottom: $border-basic;
+  color: $color-red;
+  cursor: pointer;
+}
+
+.comment {
+  font-family: $font-basic;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+//RESULTS
+.results {
+  width: 80%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.result {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 0 0.5rem 1rem 0.5rem;
+  width: min-content;
+  box-shadow: $shadow-light;
+  cursor: pointer;
+}
+
+.result-title {
+  color: $color-green-dark;
+  font-family: $font-basic;
+  font-size: 1.25rem;
+}
+
+.result-author {
+  color: $color-green-light;
+  margin-bottom: 0.5rem;
+}
+
+.result-img {
+  width: 12.5rem;
+
+  @include respond(tab-land) {
+    width: 14rem;
+  }
+}

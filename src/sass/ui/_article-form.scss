@@ -1,0 +1,51 @@
+.button-send-small {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+
+  @include respond(tab-port) {
+    visibility: hidden;
+  }
+}
+
+.button-send-div {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.button-send-large {
+  visibility: hidden;
+
+  @include respond(tab-port) {
+    visibility: visible;
+  }
+}
+
+.form-article {
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
+
+  @include respond(tab-port) {
+    width: 80%;
+  }
+}
+
+.input-article {
+  width: 100%;
+  background-color: inherit;
+  height: calc(100vh - 15.5rem);
+  font-size: 1.5rem;
+  font-family: $font-basic;
+  line-height: 1.5;
+  outline: none;
+  border: none;
+  resize: none;
+
+  @include respond(tab-port) {
+    background-color: white;
+    padding: 1rem;
+    height: calc(100vh - 22.5rem);
+    border-radius: 1rem;
+  }
+}

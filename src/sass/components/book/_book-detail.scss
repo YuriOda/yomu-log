@@ -1,0 +1,10 @@
+#book-detail {
+  @include section();
+  text-align: center;
+
+  position: relative;
+}
+
+.book-articles {
+  text-align: left;
+}

@@ -1,0 +1,50 @@
+#recent-posts {
+  padding: 2rem;
+}
+
+.posts {
+  width: 80%;
+  margin: 0 auto 0 auto;
+}
+
+.posts hr {
+  margin-bottom: 1rem;
+}
+
+.recent-book {
+  font-family: $font-recent;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+
+  margin-bottom: 1rem;
+  padding: 0 1.5rem 0 1.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.recent-date {
+  display: inline-block;
+  width: 5rem;
+  overflow: hidden;
+}
+
+.recent-title {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: calc(80vw - (4rem + 3rem + 5rem + 5.5rem + 1rem));
+
+  @include respond(mobile-small) {
+    max-width: 50vw;
+  }
+}
+
+.view-button {
+  @include button-green();
+  background-color: $color-green-light;
+  color: white;
+  height: 2.5rem;
+  width: 5.5rem;
+}

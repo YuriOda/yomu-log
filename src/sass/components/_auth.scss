@@ -1,0 +1,83 @@
+.auth-section {
+  @include section();
+  font-family: $font-basic;
+  font-size: 1.25rem;
+  color: $color-green-light;
+}
+
+.auth-div {
+  width: 80vw;
+  max-width: 45rem;
+  margin: 0 auto;
+}
+
+.auth-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+
+.auth-form {
+  border-radius: 1rem;
+  padding: 4rem 2rem;
+  background-color: $color-beige-light;
+  text-align: center;
+
+  p {
+    text-align: left;
+  }
+
+  label {
+    display: block;
+  }
+
+  input {
+    font-size: inherit;
+    font-family: inherit;
+    height: 2.5rem;
+    width: 100%;
+
+    margin: 1rem 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+  }
+}
+
+.auth-save-button {
+  @include button();
+  cursor: pointer;
+  background-color: $color-green-dark;
+  color: white;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  border-radius: 1rem;
+
+  &:hover {
+    background-color: $color-beige-dark;
+  }
+}
+
+.auth-toggle {
+  text-align: center;
+}
+
+.auth-toggle-div {
+  text-align: center;
+
+  a,
+  a:visited {
+    color: $color-red;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $color-green-light;
+  }
+}
+
+.auth-error {
+  color: $color-red;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
